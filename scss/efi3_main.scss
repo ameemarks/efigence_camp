@@ -1,5 +1,4 @@
-//Reset css
-@import "reset.css";
+
 
 //Modules - zmienne, mixiny, mapy
 @import "variables";
@@ -8,7 +7,7 @@
 @import "typography";
 
 //Components - stałe elementy strony
-@import "components/apla";
+@import "components/_apla";
 @import "components/avatar";
 @import "components/background";
 @import "components/button";
@@ -24,6 +23,7 @@
 body {
   font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
   color: $fontColor;
+  text-align: center;
 
-  background-image: url("pics/login_page/background_container.png");
+  background-image: url("../pics/login_page/background_container.png");
 }
