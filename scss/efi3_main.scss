@@ -3,9 +3,21 @@
 
 //Modules - zmienne, mixiny, mapy
 @import "variables";
-
-//Partials - poszczególne części strony;
 @import "colors";
+@import "modules";
+@import "typography";
+
+//Components - stałe elementy strony
+@import "components/apla";
+@import "components/avatar";
+@import "components/background";
+@import "components/button";
+@import "components/footer";
+@import "components/form_elems";
+@import "components/icons";
+@import "components/logo";
+
+//Pages - poszczególne części strony;
 @import "pages/login_site";
 
 
