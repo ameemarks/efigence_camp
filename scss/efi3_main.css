@@ -1,0 +1,14 @@
+@import url(reset.css);
+body {
+  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  color: white;
+  background-image: url("../pics/login_page/background_container.png");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+body {
+  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  color: white;
+  background-image: url("pics/login_page/background_container.png"); }
+
+/*# sourceMappingURL=efi3_main.css.map */

@@ -1,0 +1,17 @@
+//Reset css
+@import "reset.css";
+
+//Modules - zmienne, mixiny, mapy
+@import "variables";
+
+//Partials - poszczególne części strony;
+@import "colors";
+@import "pages/login_site";
+
+
+body {
+  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  color: $fontColor;
+
+  background-image: url("pics/login_page/background_container.png");
+}
