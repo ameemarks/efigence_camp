@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>efi3 banking solutions</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css">
 
@@ -12,28 +12,38 @@
   <body>
     <div class="container login_background">
       <div class="row">
-        <div class="small-12 medium-1 medium-offset-1 large-2 large-offset-2 columns">
-          <a class="logo">
-            <img src="pics/login_page/logo_efi3.png">
+        <div class="small-12 medium-2 large-2 large-offset-1 columns">
+          <a class="logo_link">
+            <img src="pics/login_page/logo_efi3.png" class="logo_pic">
           </a>
         </div>
 
-        <div class="large-4 columns end">
+        <div class="small-12 medium-8 large-6 large-centered columns end">
           <div class="box green_background">
             <header>
-              <h1>Login</h1>
-              <p>Aby zaimportować dane zaloguj się do swojego banku</p>
+              <h1 class="box_title">Login</h1>
+              <p class="box_subtitle">Aby zaimportować dane zaloguj się do swojego banku</p>
             </header>
 
             <form class="form">
               <div class="avatar"></div>
-              <p>324765894</p>
-              <input type="text">
-              <button>SELECT OTHER</button>
-              <button>GO</button>
+              <p class="client_number">324765894</p><img src="pics/login_page/closing_cross.png" alt="x" class="closing_cross"><br>
+              <input type="password" class="client_pass"><img src="pics/login_page/keyboard.png" alt="" class="keyboard_icon"><br>
+              <div class="buttons_wrapper">
+                <a href="#" class="button">SELECT OTHER</a>
+                <a href="#" class="button">GO</a>
+              </div>
             </form>
 
           </div>
+
+          <footer>
+            <ul class="options">
+              <li><a href="#">SECURITY</a></li>
+              <li><a href="#">LOGGIN IN</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </footer>
         </div>
       </div>
     </div>
