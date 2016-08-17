@@ -1,8 +1,16 @@
 .menu {
   list-style: none;
 
-  li {
-    
+  li:hover {
+    background-color: black;
+  }
+
+  li a:hover {
+    color: $fontColor;
+
+    &::before {
+      //kółko (display block)
+    }
   }
 
 }
