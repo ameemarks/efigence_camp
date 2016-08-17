@@ -15,9 +15,12 @@
 @import "components/form_elems";
 @import "components/icons";
 @import "components/logo";
+@import "components/navigation";
 
 //Pages - poszczególne części strony;
 @import "pages/login_site";
+@import "pages/dashboard";
+
 
 
 body {
