@@ -1,13 +1,34 @@
-.dashboard-container {
+.dashboard_header_container {
   background-color: $mainColor;
-  //height: 120px;
+
 }
 
 .usrname {
   text-align: left;
   display: block;
+  margin-top: 20px;
+  height: 40px;
+  line-height: 1rem;
+  // overflow: hidden;
 }
 
 .usroptions {
   display: inline-block;
+}
+
+.search_icon, .power_icon {
+  display: inline-block;
+  border: 1px solid pink;
+  //float: right;
+    img {
+      height: 30px;
+    }
+}
+
+.search_icon {
+  float: right;
+}
+
+.power_icon {
+  float: left;
 }
