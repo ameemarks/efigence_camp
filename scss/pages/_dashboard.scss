@@ -16,19 +16,34 @@
   display: inline-block;
 }
 
-.search_icon, .power_icon {
-  display: inline-block;
-  border: 1px solid pink;
-  //float: right;
-    img {
-      height: 30px;
+
+.search_power_outer_container {
+  height: 110px;
+  border: 1px solid yellow;
+  position: relative;
+
+  .search_power_inner_container {
+    border: 1px solid green;
+    display: inline-block;
+    float: right;
+    position: absolute;
+
+    .search_icon, .power_icon {
+      border: 1px solid pink;
+      display: inline-block;
+
+      img {
+        height: 30px;
+      }
     }
+  }
 }
 
 .search_icon {
-  float: right;
+  //float: right;
 }
 
 .power_icon {
-  float: left;
+  //float: left;
 }
+
