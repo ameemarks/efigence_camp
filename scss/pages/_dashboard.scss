@@ -16,34 +16,50 @@
   display: inline-block;
 }
 
+.settings {
+  img {
+      border-radius: 50%;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition: transform .8s ease-in-out;
+    }
+    img:hover {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
 
 .search_power_outer_container {
   height: 110px;
-  border: 1px solid yellow;
   position: relative;
 
   .search_power_inner_container {
-    border: 1px solid green;
     display: inline-block;
     float: right;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 0;   // removes white space between span elems
 
     .search_icon, .power_icon {
-      border: 1px solid pink;
       display: inline-block;
+      height: 70px;
 
       img {
         height: 30px;
+        box-sizing: content-box;
+        padding: 20px 5px;
       }
     }
   }
 }
 
 .search_icon {
-  //float: right;
+  //border-right: 0.25px solid $fontColor;
 }
 
 .power_icon {
-  //float: left;
+  border-left: 1px solid $fontColor;
 }
 
