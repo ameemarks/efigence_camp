@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css">
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-    <script src="js/button_event.js"></script>      <!-- ŚCIEŻKA I PLIK DO ZMIANY!!!! -->
+    <script src="js/search.js"></script>
 </head>
 
 <body>
@@ -93,12 +93,27 @@
                 <div class="small-2 large-3 column end">           <!-- search + off -->
 
                     <div class="search_power_outer_container">
-                        <div class="search_power_inner_container">
+                        <div class="search_power_inner_container"> <!-- container-->
+
+                            <form action="javascript:void(0);" method="get">
+                                <fieldset>
+
+                                    <ul class="toolbar clearfix">
+
+                                        <li><input type="search" id="search" placeholder="What are you looking for?"></li>
+                                        <li>
+                                            <button type="submit" id="btn-search">
+                                                <span class="search_icon">
+                                                    <a href="#"><img src="pics/dashboard/icons/search.png"></a>
+                                                </span>
+                                            </button>
+                                        </li>
+
+                                    </ul>
 
 
-                            <span class="search_icon">
-                                <a href="#"><img src="pics/dashboard/icons/search.png"></a>
-                            </span>
+                                </fieldset>
+                            </form>
 
                             <span class="power_icon">
                                 <a href="#"><img src="pics/dashboard/icons/power.png"></a>

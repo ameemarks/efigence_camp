@@ -37,10 +37,11 @@
     display: inline-block;
     float: right;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    //top: 50%;                     // wyśrodkowuje w poziomie
+    //transform: translateY(-50%);    // wyśrodkowuje w poziomie
     right: 0;
     font-size: 0;   // removes white space between span elems
+    width: 100%;
 
     .search_icon, .power_icon {
       display: inline-block;
@@ -55,9 +56,6 @@
   }
 }
 
-.search_icon {
-  //border-right: 0.25px solid $fontColor;
-}
 
 .power_icon {
   border-left: 1px solid $fontColor;
