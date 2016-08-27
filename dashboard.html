@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/app.css">
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/cash_values.js"></script>
 </head>
 
 <body>
@@ -149,6 +150,56 @@
         </div>
 
     </header>
+
+    <section class="stream_container">
+        <div class="row">
+            <div class="small-12 medium-8 large-7 columns large-offset-1">    <!--finance life stream, values-->
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h1>Finance life stream</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-4 columns"><span>Balance</span></div>
+                    <div class="small-4 columns"><span>Available funds</span></div>
+                    <div class="small-4 columns"><span>Scheduled payments</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="small-4 columns">
+                        <div id="balance">value 1</div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div id="funds">value 2</div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div id="payments">value 3</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="small-12 medium-4 large-3 columns end">           <!--additional account options for user-->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <span>Add</span>
+                        <a href="#">BANK</a>
+                        <a href="#">PAYMENT</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <span>Account analysis</span>
+                        <button>ON</button>
+                        <button>OFF</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>

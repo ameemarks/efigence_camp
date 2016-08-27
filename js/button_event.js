@@ -7,7 +7,7 @@ $(document).ready(function() {
     var button = document.getElementById("button1");
     var input = document.getElementById("pass");
 
-    $(button1).on('click', function (event){
+    $(button).on('click', function (event){
         event.preventDefault();
         var password = $(input).val();      //pobieramy wartość inputa
         sendAjax(password);             //przekazujemy argument do funkcji sendAjax
@@ -33,7 +33,7 @@ $(document).ready(function() {
         }
 
         else { //ma się pojawić pod inputem element html, czerwone tło, biały napis "proszę wpisać hasło"
-            $(button1).click(function(){
+            $(button).click(function(){
                 $(".no_pass").toggleClass("pass_in");
             });
 
