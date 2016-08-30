@@ -26,7 +26,7 @@ $(document).ready(function() {
         var apiPayments = msg.content[0].payments;
 
         var numberWithSpaces = function (x) {
-            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");      //RegEx
         };
 
         document.getElementById("balance").innerHTML = (numberWithSpaces(apiBalance)+",00").bold() + " PLN";

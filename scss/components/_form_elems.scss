@@ -18,11 +18,12 @@
 }
 
 .no_pass {
-  display: inline;
+  display: none;
   background-color: red;
   color: white;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
-.pass_in {
-  display: none;
-}

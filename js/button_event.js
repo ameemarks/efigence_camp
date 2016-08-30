@@ -4,18 +4,26 @@
 
 $(document).ready(function() {
 
-    var button = document.getElementById("button1");
+    var button = document.getElementById("button_go");
     var input = document.getElementById("pass");
 
     $(button).on('click', function (event){
         event.preventDefault();
+
         var password = $(input).val();      //pobieramy wartość inputa
-        sendAjax(password);             //przekazujemy argument do funkcji sendAjax
+
+        if (password.length == 0) {
+            var usrInfoField = document.getElementsByClassName("no_pass");
+            $ (usrInfoField).show().fadeOut(9000);
+        }
+
+        else {
+            sendAjax(password);     //przekazujemy argument do funkcji sendAjax
+        }
     });
 
-    function sendAjax (pass) {
+    function sendAjax (pass) {      //pass=password z linijki 21.
         if (pass.length > 0) {
-
             $.ajax({
                 type: "post",
                 data: {
@@ -31,16 +39,5 @@ $(document).ready(function() {
                 }
             });
         }
-
-        else { //ma się pojawić pod inputem element html, czerwone tło, biały napis "proszę wpisać hasło"
-            $(button).click(function(){
-                $(".no_pass").toggleClass("pass_in");
-            });
-
-
-        };
-    };
-
-
-
-})
+    }
+});
